@@ -16,6 +16,7 @@ To play the game, simply clone this repository to your local machine:
 ```bash
 # This is a bash code block
 git clone https://github.com/chriss1525/Snake_Game.git
+```
 
 
 Then, navigate to the cloned repository and run the following command:
@@ -23,6 +24,7 @@ Then, navigate to the cloned repository and run the following command:
 ```bash
 # This is css code block
 python game.py
+```
 
 
 Use the arrow keys to control the snake and try to eat as much food as possible without running into the walls or the snake's body. The game ends when the snake hits the wall or its own body.
