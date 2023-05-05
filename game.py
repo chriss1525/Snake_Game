@@ -13,7 +13,7 @@ high_score = 0
 # set up screen
 box = turtle.Screen()
 box.title("Snake game")
-box.bgcolor("blue")
+box.bgcolor("green")
 box.setup(width=600, height=600)
 box.tracer(0)
 
@@ -72,6 +72,9 @@ def go_right():
     if head.direction != "left":
         head.direction = "right"
 
+def stop():
+    head.direction = "stop"
+
 
 # keyboard bindings
 box.listen()
@@ -79,6 +82,7 @@ box.onkeypress(go_up, "Up")
 box.onkeypress(go_down, "Down")
 box.onkeypress(go_left, "Left")
 box.onkeypress(go_right, "Right")
+box.onkeypress(stop, "space")
 
 # More Functions
 
